@@ -7,7 +7,7 @@ if (hora >= 0 && hora <= 11) {
 } else if (hora >= 18 && hora <= 23) {
     console.log(`Boa noite!`);
 } else {
-    console.log(`Horario inválido!`);
+    console.log(`Hora inválida!`);
 }
 
 const tenhoGrana = 0;
