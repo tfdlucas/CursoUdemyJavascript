@@ -1,0 +1,34 @@
+* Escapar caracter com barra invertida
+let umaString = "Um \"texto\"";
+console.log(umaString);
+
+* Cada caracter tem um índice que começa do "0", que reperesenta o primeiro elemento da string.
+
+* console.log(umaString[4]); Só exibe o 4° elemento da string.
+
+* console.log(umaString.charAt(4)); Só exibe o 4° elemento da string.
+
+* console.log(umaString.indexOf('texto')); Busca o índice que começa a palavra texto
+
+* console.log(umaString.lastIndexOf('texto')); Busca de trás para frente
+
+* console.log(umaString.search(/x/)); Busca o índice da letra "x"
+
+* console.log(umaString.replace('Um', 'Dois')); Substitui a palavra "um" por "dois"
+
+* console.log(umaString.replace(/r/g, '#')); Substitui todas as letras "r" pela #, se tirar o "g" muda apenas a 1°
+
+* console.log(umaString.length); Pega o tamanho total da string
+
+* console.log(umaString.slice(2, 6)); Pega apenas os caracteres dentro do intervalo
+
+* console.log(umaString.slice(-5, -1)); Pega o intervalo de trás para frente.
+
+* console.log(umaString.split(' ')); Fatia como um array todas as palavras que estiverem entre o espaço
+
+* console.log(umaString.split(' ', 2)); Fatia mas apenas 2 vezes
+
+* console.log(umaString.toUpperCase()); Toda a string em letras maíusculas.
+
+* console.log(umaString.toLowerCase()); Toda a string em letras mínusculas.
+

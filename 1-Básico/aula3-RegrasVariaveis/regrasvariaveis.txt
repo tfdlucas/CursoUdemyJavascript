@@ -1,0 +1,11 @@
+REGRAS DE VARIAVEIS
+
+Não podemos criar variaveis com palavras reservadas
+Não podemos modificar o valor de uma constante
+Variaveis precisam ter nomes significativos
+Não podemos começar o nome de uma variavel com um numero
+Nao podem conter traços ou espaços
+Utilizamos camelCase
+São Case-sensitive (faz diferença)
+Nao podemos redeclarar variaveis com let
+Não utilizar var
