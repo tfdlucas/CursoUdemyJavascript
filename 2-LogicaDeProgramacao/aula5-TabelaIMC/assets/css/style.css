@@ -35,7 +35,7 @@ h1 {
 .tabela {
     font-size: 18px;
     margin: 0 auto;
-    
+
 }
 
 form input, form label, form button {
@@ -71,9 +71,11 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.resultado {
-    text-align: center;
-    font-size: 15px;
-    height: 35px;
-    padding: 0 20px;
+.verde, .vermelho {
+    background: rgb(109, 255, 182);
+    padding: 10px 20px;
+}
+
+.vermelho {
+    background: rgb(255, 150, 150);
 }
