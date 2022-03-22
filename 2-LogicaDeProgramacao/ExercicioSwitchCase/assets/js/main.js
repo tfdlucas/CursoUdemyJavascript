@@ -1,4 +1,4 @@
-function getDiaSemanaText (diaSemana) {
+function getDiaSemanaText (diaSemana) { // Converte o número do dia da semana para o nome
     let diaSemanaText;
 
     switch (diaSemana) {
@@ -24,20 +24,62 @@ function getDiaSemanaText (diaSemana) {
         diaSemanaText = `Sábado`;
         return diaSemanaText;
     default:
-        diaSemanaText = ``;
+        diaSemanaText = ` `;
         return diaSemanaText;
     }
 }
 
-function getMesAtual (mesAtual) {
+function getMesAtual (mesAtual) { // Converte o número do mês para o nome
     let mesAtualText;
 
     switch (mesAtual) {
-
+    case 0:
+        mesAtualText = `Janeiro`;
+        return mesAtualText;
+    case 1:
+        mesAtualText = `Fevereiro`;
+        return mesAtualText;
+    case 2:
+        mesAtualText = `Março`;
+        return mesAtualText;
+    case 3:
+        mesAtualText = `Abril`;
+        return mesAtualText;
+    case 4:
+        mesAtualText = `Maio`;
+        return mesAtualText;
+    case 5:
+        mesAtualText = `Junho`;
+        return mesAtualText;
+    case 6:
+        mesAtualText = `Julho`;
+        return mesAtualText;
+    case 7:
+        mesAtualText = `Agosto`;
+        return mesAtualText;
+    case 8:
+        mesAtualText = `Setembro`;
+        return mesAtualText;
+    case 9:
+        mesAtualText = `Outubro`;
+        return mesAtualText;
+    case 10:
+        mesAtualText = `Novembro`;
+        return mesAtualText;
+    case 11:
+        mesAtualText = `Dezembro`;
+        return mesAtualText;
+    default:
+        mesAtualText = ` `;
+        return mesAtualText;
     }
 }
 
-const retorno = document.querySelector('#container');
+function zeroAEsquerda (num) {
+    return num >= 10 ? num : `0${num}`; // Função para adicionar o número 0
+}
+
+const retorno = document.querySelector('#container'); // Captura o ID do HTML
 
 const dataAtual = new Date(); // Pega a data atual 
 const diaSemana = dataAtual.getDay(); //Pega o dia da semana dentro da data
@@ -45,5 +87,8 @@ const diaSemanaText = getDiaSemanaText(diaSemana); // Retorno da função do dia
 const mesAtual = dataAtual.getMonth(); // Pega o mes de dentro da data
 const mesAtualText = getMesAtual(mesAtual); // Retorno da função do mês
 const anoAtual = dataAtual.getFullYear(); // Pega o ano atual
+const horarioAtual = zeroAEsquerda(dataAtual.getHours()); // Pega a hora
+const minutosAtual = zeroAEsquerda(dataAtual.getMinutes()); // Pega os minutos
+const segundosAtual = zeroAEsquerda(dataAtual.getSeconds()); // Pega os segundos
 
-retorno.innerHTML = `${diaSemanaText}, ${diaSemana} de ${mesAtualText} de ${anoAtual} `;
+retorno.innerHTML = `${diaSemanaText}, ${diaSemana} de ${mesAtualText} de ${anoAtual} <br/> ${horarioAtual}:${minutosAtual}:${segundosAtual}`; 
