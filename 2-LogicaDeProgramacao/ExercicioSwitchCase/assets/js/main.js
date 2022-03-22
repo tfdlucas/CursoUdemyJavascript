@@ -1,3 +1,9 @@
+// Minha Resolução
+
+const retorno = document.querySelector('#container h1'); // Captura o ID do HTML
+const dataAtual = new Date(); // Pega a data atual 
+
+
 function getDiaSemanaText (diaSemana) { // Converte o número do dia da semana para o nome
     let diaSemanaText;
 
@@ -79,16 +85,16 @@ function zeroAEsquerda (num) {
     return num >= 10 ? num : `0${num}`; // Função para adicionar o número 0
 }
 
-const retorno = document.querySelector('#container'); // Captura o ID do HTML
+function criaData (dataAtual) {
+    const diaSemana = dataAtual.getDay(); //Pega o dia da semana dentro da data
+    const diaSemanaText = getDiaSemanaText(diaSemana); // Retorno da função do dia da semana
+    const mesAtual = dataAtual.getMonth(); // Pega o mes de dentro da data
+    const mesAtualText = getMesAtual(mesAtual); // Retorno da função do mês
+    const horarioAtual = zeroAEsquerda(dataAtual.getHours()); // Pega a hora
+    const minutosAtual = zeroAEsquerda(dataAtual.getMinutes()); // Pega os minutos
 
-const dataAtual = new Date(); // Pega a data atual 
-const diaSemana = dataAtual.getDay(); //Pega o dia da semana dentro da data
-const diaSemanaText = getDiaSemanaText(diaSemana); // Retorno da função do dia da semana
-const mesAtual = dataAtual.getMonth(); // Pega o mes de dentro da data
-const mesAtualText = getMesAtual(mesAtual); // Retorno da função do mês
-const anoAtual = dataAtual.getFullYear(); // Pega o ano atual
-const horarioAtual = zeroAEsquerda(dataAtual.getHours()); // Pega a hora
-const minutosAtual = zeroAEsquerda(dataAtual.getMinutes()); // Pega os minutos
-const segundosAtual = zeroAEsquerda(dataAtual.getSeconds()); // Pega os segundos
+    return retorno.innerHTML = `${diaSemanaText}, ${diaSemana} de ${mesAtualText} de 
+    ${dataAtual.getFullYear()} <br/> ${horarioAtual}:${minutosAtual}`; 
+}
 
-retorno.innerHTML = `${diaSemanaText}, ${diaSemana} de ${mesAtualText} de ${anoAtual} <br/> ${horarioAtual}:${minutosAtual}:${segundosAtual}`; 
+criaData(dataAtual); // Chama a Função

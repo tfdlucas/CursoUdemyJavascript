@@ -28,8 +28,6 @@ body {
 }
 
 h1 {
-    text-align: center;
-    text-transform: uppercase;
     font-weight: 900;
     color: var(--primary-color);
 }
