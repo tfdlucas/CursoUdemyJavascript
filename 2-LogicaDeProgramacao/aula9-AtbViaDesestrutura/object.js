@@ -18,6 +18,7 @@ const { idade } = pessoa; // Atribuição via desestruturação
 const { endereco: { rua, numero } } = pessoa;
 const { nome: n} = pessoa; // Trocou o nome da variavel 'nome' por 'n' 
 console.log(idade, rua, numero, n);
+console.log(pessoa['nome']);
 
 const { nome, ...rest } = pessoa;
 console.log(rest); // Pega tudo menos o nome

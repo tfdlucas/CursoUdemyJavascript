@@ -13,7 +13,8 @@ for (let i = 0; i < elementos.length; i++)  {
     let tagCriada = document.createElement(tag); // Cria elementos baseados nas tags do array no HTML
 
     tagCriada.innerHTML = texto; // Exibe o texto contido no array
-    div.appendChild(tagCriada); // Div que ja foi criada recebendo um filho 'tagCriada
+
+    div.appendChild(tagCriada); // Div que ja foi criada recebendo um filho 'tagCriada'
 }
 
 container.appendChild(div); // Container recebe o filho 'div'
