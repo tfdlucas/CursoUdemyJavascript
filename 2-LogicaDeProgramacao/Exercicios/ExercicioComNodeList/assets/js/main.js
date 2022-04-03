@@ -5,6 +5,6 @@ const estilosBody = getComputedStyle(document.body); //Pega todo o css computado
 const backgroundColorBody = estilosBody.backgroundColor; //Pega a cor de fundo do body
 
 for (let p of ps) {
-    p.style.backgroundColor = backgroundColorBody;
-    p.style.color = '#FFFFFF';
+    p.style.backgroundColor = backgroundColorBody; //Adiciona a cor no fundo
+    p.style.color = '#FFFFFF'; //Adiciona a cor no paragráfo
 }
