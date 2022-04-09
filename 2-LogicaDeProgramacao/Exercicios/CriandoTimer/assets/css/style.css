@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 46, 55);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 340px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.relogio {
+    font-size: 3em;
+}
+
+h1, .relogio, .botoes {
+    text-align: center;
+}
+
+.iniciar, .pausar, .reiniciar {
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.pausado {
+    color: red;
+}
