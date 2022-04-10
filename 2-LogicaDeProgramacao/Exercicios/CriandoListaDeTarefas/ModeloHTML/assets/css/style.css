@@ -33,35 +33,18 @@ h1 {
     color: var(--primary-color);
 }
 
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-form input {
-    font-size: 24px;
-    height: 35px;
-    padding: 0 20px;
-}
-
-form input:focus {
-    outline: 1px solid var(--primary-color);
-}
-
-form button {
+button {
     border: none;
     background: var(--primary-color);
     color: #fff;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    height: 50px;
+    height: 25px;
     cursor: pointer;
     margin-top: 20px;
 }
 
-form button:hover {
+button:hover {
     background: var(--primary-color-darker);
 }

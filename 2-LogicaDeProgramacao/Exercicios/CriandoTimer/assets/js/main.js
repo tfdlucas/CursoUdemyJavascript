@@ -19,7 +19,7 @@ function relogio() {
         }, 1000);
     }
 
-    document.addEventListener('click', function (e) { // Captura os clics no documento e    seleciona os botoes no HTML substituindo o querySelector
+    document.addEventListener('click', function (e) { // Captura os clics no documento e    seleciona os botões no HTML substituindo o querySelector
         const element = e.target; // Recebe os locais clicados no documento
 
         if (element.classList.contains('reiniciar')) { // REINICIAR
