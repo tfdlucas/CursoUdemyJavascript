@@ -1,0 +1,26 @@
+// Arguments - Sustenta todos os argumentos, não funciona em arrow
+
+function funcao() {
+    let total = 0;
+    for (let argumento of arguments) {
+        total += argumento;
+    }
+    console.log(total);
+}
+funcao(1, 2, 6, 10);
+
+###################
+
+// // Objeto literal / Atribuição via desestruturação
+function funcao ({nome, sobrenome, idade}) {
+    console.log(nome, sobrenome, idade);
+}
+funcao({nome: 'Lucas', sobrenome:'Shane', idade: 23});
+
+###################
+
+// Array / Atribuição via desestruturação
+function funcao ([valor1, valor2, valor3]) {
+    console.log(valor1, valor2, valor3);
+}
+funcao(['Lucas', 'Shane', 23]);
