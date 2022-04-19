@@ -1,3 +1,4 @@
+// OBJETIVO - Exibir f1, f2, f3 nessa ordem, mesmo gerando tempos aleatórios
 
 function rand(min = 1000, max = 3000) { // Gera numero aleatório entre 1 e 3 segundos
     const num = Math.random() * (max - min) + min;
