@@ -3,7 +3,7 @@
 
 function Produto(nome, preco, estoque) {
     Object.defineProperty(this, 'estoque', {
-        enumerable: true, // Insere a variável na lista de objetos ccom valor 'undefined'
+        enumerable: true, // Insere a variável na lista de objetos
         value: estoque, // Exibe o valor do 'estoque' na lista apresentada
         writable: false, // Se o valor pode ou não ser alterado
         configurable: false // Configurável
