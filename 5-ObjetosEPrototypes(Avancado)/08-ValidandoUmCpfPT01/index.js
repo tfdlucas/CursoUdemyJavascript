@@ -5,7 +5,8 @@ function ValidaCPF(cpfEnviado) {
     Object.defineProperty(this, 'cpfLimpo', {
         enumerable: true,
         get: function() {
-            return cpfEnviado.replace(/\D+/g, ''); // Expressão regular que pega tudo que não for número
+            return cpfEnviado.replace(/\D+/g, ''); 
+            // Expressão regular que pega tudo que não for número e substitui por um valor vazio
         }
     });
 }
@@ -41,7 +42,7 @@ ValidaCPF.prototype.isSequencia = function() {
     return sequencia === this.cpfLimpo;
 };
 
-const cpf = new ValidaCPF('705.484.450-52');
+const cpf = new ValidaCPF('705.484.450-42');
 
 if(cpf.valida()) {
     console.log('CPF válido.');
